@@ -1,0 +1,78 @@
+/* DropDown Accordion CSS */
+#daily_reports_accordion{
+    margin-left: -15px;
+}
+#report, #daily_reports_accordion div{
+    background-color: #fafdf2;
+    border: 1px solid #d7d7d7;
+    width: 614px;
+    margin: -23px auto 0 auto;
+    padding-top: 20px;
+}
+#daily_reports_accordion h3{
+    margin: 0 auto;
+    width: 350px;
+    height: 25px;
+    color: #4b741d;
+    font: 22px Helvetica Neue;
+    font-weight: bold;
+    text-indent: 70px;
+}   
+.ui-widget-content{
+    background: #fafdf2;
+}
+h3.ui-accordion-header{
+    border-radius: 6px;
+    outline:none;
+    border: 1px solid #cdcfc6;
+}
+div.ui-accordion-content{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.ui-state-focus, .ui-state-default{
+    background: #ffffff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI3JSIgc3RvcC1jb2xvcj0iI2ZiZmRmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYzJSIgc3RvcC1jb2xvcj0iI2U0ZWZjZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjMGQ5OGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #ffffff 0%, #fbfdf9 27%, #e4efcd 63%, #c0d98b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(27%,#fbfdf9), color-stop(63%,#e4efcd), color-stop(100%,#c0d98b));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#fbfdf9 27%,#e4efcd 63%,#c0d98b 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#fbfdf9 27%,#e4efcd 63%,#c0d98b 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#fbfdf9 27%,#e4efcd 63%,#c0d98b 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#fbfdf9 27%,#e4efcd 63%,#c0d98b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c0d98b',GradientType=0 );
+}
+.ui-icon.iconOpen {
+    background:url('http://www.daniellehickinbotham.com/wp-content/uploads/2014/09/minusicon.png') no-repeat;
+    background-size:15px;
+    width:15px;
+    height:15px;
+}
+.ui-icon.iconClosed {
+    background:url('http://www.daniellehickinbotham.com/wp-content/uploads/2014/09/plusicon.png') no-repeat;
+    background-size:15px;
+    width:15px;
+    height:15px;
+}
+li.parent{
+    list-style-image: url('http://www.daniellehickinbotham.com/wp-content/uploads/2014/09/listplus.png');
+}
+li.open{
+    list-style-image: url('http://www.daniellehickinbotham.com/wp-content/uploads/2014/09/listminus.png');
+}
+ul.child, .nosub{
+    list-style-image: url('http://www.daniellehickinbotham.com/wp-content/uploads/2014/09/listicon.png');
+    color: #20558a;
+}
+#daily_reports_accordion .parent{
+    font: 1em Helvetica Neue;
+    font-weight: bold;
+    color: #555555;
+}
+#daily_reports_accordion .child, #daily_reports_accordion .nosub{
+    font: 1em Helvetica Neue;
+    font-weight: bold;   
+}
+#daily_reports_accordion .child a, #daily_reports_accordion .child a:active, #daily_reports_accordion .child a:link, #daily_reports_accordion .child a:visited, #daily_reports_accordion .child a, #daily_reports_accordion .child a:active, #daily_reports_accordion .child a:link, #daily_reports_accordion .child a:visited{
+    color: #20558a;
+    text-decoration: none;
+}

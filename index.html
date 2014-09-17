@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title></title>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--[if gte IE 9]>
+            <style type="text/css">
+                .gradient {
+                    filter: none;
+                }
+            </style>
+        <![endif]-->
+        
+    </head>
+    <body>
+        <div id="daily_reports_accordion">
+            <h3>Daily Reports</h3>
+            <div>
+                <ul class="accordion_list">
+                    <li class="parent">Daily Reports
+                        <ul class="child">
+                            <li><a href="#">Covered Entity Daily Report</a></li>
+                            <li>Contract Pharmacy Daily Report</li>
+                            <li>Manufacturer Daily Report</li>
+                        </ul>
+                    </li>
+                    <li class="nosub">Historical Reports</li>
+                </ul>
+            </div>
+        </div>
+        <script>
+          $( document ).ready(function() {
+             var icons = {
+                header: "iconClosed",
+                activeHeader: "iconOpen"
+             };
+            $( "#daily_reports_accordion" ).accordion({
+                icons: icons,
+                collapsible: true, active: false
+            });
+              
+              
+            $('#daily_reports_accordion ul ul').hide();
+            $('#daily_reports_accordion ul li').click(function(e) {
+                if(e.target == this)
+                    $(this).find('.child').slideToggle();
+                    $(this).closest('.parent').toggleClass('open');
+            });
+          });
+            
+            
+        </script>
+
+    </body>
+</html>
